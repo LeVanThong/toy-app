@@ -1,3 +1,5 @@
 $('.delete_ajax').bind('ajax:success', function() {
    $(this).closest('tr').fadeOut();
+   $('#notice').text("Delete success!");
+   $('#notice').show();
 });
